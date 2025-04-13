@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>
+    <script src="validate.js" defer></script>
+    <title>signup</title>
+
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        form {
+            background-color: rgb(10, 236, 236);
+            border-radius: 5px;
+            padding: 60px;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        h1 {
+            color: white;
+            margin: 0 0 20px;
+        }
+        label {
+            color: white;
+            display: block;
+            margin-bottom: 5px;
+        }
+        input {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        button {
+            background-color:#a71919;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+            padding: 10px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <form action="signup.php" method="post" id="signup" novalidate>
+        <h1>Sign Up</h1>
+        
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+        </div>
+
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+        </div>
+
+        <p><a href="login.php"> Login</a></p>
+
+        <button type="submit" id="submit-button">Sign Up</button>
+    </form>
+</body>
+
+</html>
